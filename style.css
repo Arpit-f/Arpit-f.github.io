@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+.navBar .container{
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;  
+    display: flex;
+    justify-content: space-between; 
+}
+
+.leftNav img{
+    height: 76px;
+    width: 78px;
+    border-radius: 55px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+nav ul li a{
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.burger{
+position: absolute;
+top: 15%;
+right: 3px;
+}
+
+.line{
+    background: white;
+    height: 4px;
+    width: 33px;
+    margin: 2px;
+}
+.invisible {
+     opacity:0;
+     
+}
+
+.background1{
+    background: rgba(0, 0, 0, 0.7)
+    url(Img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+.hero {
+    padding: 1rem;
+}
+.hero .container{
+    margin-top: 5rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+span{
+    color:wheat;
+    font-size: 1.6rem;
+}
+
+.heroSection{
+    margin-bottom: 1rem;
+    
+}
+.small-para{
+font-size: 1rem;
+}
+.big-para{
+font-size: 1.2rem;
+}
+
+.hero a{
+    margin-top: .8rem;
+    color: cornflowerblue;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: .2rem;
+    display: inline-block;
+}
+
+.imgSection{
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.imgSection img{
+    height: 150px;
+    width: 150px;
+    border-radius: 110px;
+}
+
+.main{
+    padding: 1rem;
+    background: whitesmoke;
+}
+.main-right{
+    margin-top: .5rem;
+}
+
+.project{
+    padding: 1rem;
+}
+
+.projectBoxContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project .projectBox{
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid black;
+    padding: .2rem;
+    border-radius: 1.5rem;
+    
+}
+.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.projectBox img{
+    height: 150px;
+    width:300px;
+}
+
+.contact{
+    padding: 1rem;
+    background: whitesmoke;
+}
+
+.contact .container{
+    margin-top: .5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    margin: .2rem;
+    padding: .2rem;
+}
+
+.form button{
+    margin: .2rem;
+    padding: .2rem;
+    border-radius: .3rem;
+}
+
+.contactMe span1{
+    color: blue;
+    font-weight: bold;
+}
+
+footer{
+    background: black;
+    color: white;
+    font-size: .7rem;
+    padding: .3rem;
+    text-align: center;
+}
+
+@media screen and (min-width:600px) {
+    .burger{
+        display: none;
+    }
+    .rightNav{
+        width:45%;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .imgSection img{
+        height: 185px;
+        width: 185px;
+    }
+    .projectBox img {
+        height: 267px;
+        width: 509px;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .hero .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .imgSection{
+        width: 50%;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        text-align: center;
+    }
+    .imgSection img{
+        height: 200px;
+        width: 200px;
+    }
+}
+
